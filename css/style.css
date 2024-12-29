@@ -1,5 +1,5 @@
 :root {
-    --background: #141519;
+    --background: hsl(216, 12%, 8%);
     --buttom: #fc7613;
     --card: #1f2630;
     --title: #fcffff;
@@ -9,6 +9,19 @@
     --button-card: #262f38;
 }
 
+@font-face {
+    font-family: "Overpass";
+    src: url('../font/Overpass-Italic-VariableFont_wght.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Overpass";
+    src: url('../font/Overpass-VariableFont_wght.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
 
 body {
     margin: 0;
@@ -63,7 +76,7 @@ body {
     margin-top: 65px;
     color: var(--title);
     font-size: 1.80rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .home .card-content {
@@ -71,7 +84,7 @@ body {
     color: var(--text);
     font-size: 1.09rem;
     line-height: 1.4rem;
-    font-style: initial;
+    font-weight: 400;
 }
 
 .home .card-button {
@@ -95,10 +108,12 @@ body {
     border: none;
     padding: 15px 19px;
     border-radius: 50%;
+    color: #949ca7;
 }
 
 .home .card-button button:hover {
     background: var(--buttom);
+    color: #373c40;
 }
 
 .home .card-button button.active {
@@ -118,7 +133,7 @@ body {
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 8px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 17px 0;
     border-radius: 20px;
     border: none;
@@ -169,7 +184,7 @@ body {
     text-align: center;
     margin-top: 20px !important;
     font-size: 1.70rem;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--white) !important;
 }
 
@@ -178,5 +193,6 @@ body {
     color: var(--text) !important;
     text-align: center;
     line-height: 1.5rem;
+    font-weight: 400;
     font-size: 1.1rem;
 }
