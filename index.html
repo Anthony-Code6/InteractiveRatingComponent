@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating Component</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="card-body">
+            <div class="home active">
+                <div class="icon-star">
+                    <img src="./images/icon-star.svg" alt="Star">
+                </div>
+
+                <div class="card-title">How did we do?</div>
+                <div class="card-content">
+                    Please let us know how we did with your support request. All feedback is appreciated to help us
+                    improve our offering!
+                </div>
+
+                <div class="card-button">
+
+                    <button type="button" onclick="clickValor(this)">1</button>
+                    <button type="button" onclick="clickValor(this)">2</button>
+                    <button type="button" onclick="clickValor(this)">3</button>
+                    <button type="button" onclick="clickValor(this)">4</button>
+                    <button type="button" onclick="clickValor(this)">5</button>
+
+                </div>
+
+                <div class="card-footer">
+                    <button type="button" onclick="submit()">submit</button>
+                </div>
+            </div>
+
+            <div class="message">
+                <div class="card-imagen">
+                    <img src="./images/illustration-thank-you.svg" alt="Mobile">
+                </div>
+
+                <div class="card-content-select">
+                    <p id="message-content"></p>
+                </div>
+                <div class="card-title">Thank you!</div>
+                <div class="card-content">
+                    We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to
+                    get in touch!
+                </div>
+            </div>
+        </div>
+
+        <!--
+            -->
+    </div>
+</body>
+
+</html>

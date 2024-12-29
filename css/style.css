@@ -1,0 +1,182 @@
+:root {
+    --background: #141519;
+    --buttom: #fc7613;
+    --card: #1f2630;
+    --title: #fcffff;
+    --text: #717882;
+    --white: #ffffff;
+    --star: #272e38;
+    --button-card: #262f38;
+}
+
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    background: var(--card);
+    width: 35vh;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.card-body {}
+
+.home {
+    transition: all 900ms ease-in-out;
+    opacity: 0;
+    height: 0px;
+    display: none;
+}
+
+.home.active {
+    transition: all 900ms ease-in-out;
+    display: block;
+    opacity: 1;
+    height: auto;
+}
+
+.home .icon-star {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 12px;
+    border-radius: 100%;
+    background: var(--star);
+}
+
+.home .icon-star img {
+    display: flex;
+    align-items: center;
+}
+
+.home .card-title {
+    margin-top: 65px;
+    color: var(--title);
+    font-size: 1.80rem;
+    font-weight: 500;
+}
+
+.home .card-content {
+    margin-top: 20px;
+    color: var(--text);
+    font-size: 1.10rem;
+    line-height: 1.4rem;
+    font-style: initial;
+}
+
+.home .card-button {
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .card-button button {
+    cursor: pointer;
+    align-items: center;
+    background: var(--button-card);
+    border: none;
+    padding: 15px 19px;
+    border-radius: 50%;
+}
+
+.home .card-button button {
+    align-items: center;
+    background: var(--button-card);
+    border: none;
+    padding: 15px 19px;
+    border-radius: 50%;
+}
+
+.home .card-button button:hover {
+    background: var(--buttom);
+}
+
+.home .card-button button.active {
+    background: var(--white);
+}
+
+.home .card-footer {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.home .card-footer button {
+    cursor: pointer;
+    width: 100%;
+    background: var(--buttom);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 8px;
+    font-weight: 600;
+    padding: 17px 0;
+    border-radius: 20px;
+    border: none;
+}
+
+
+.home .card-footer button:hover {
+    background: var(--white);
+}
+
+/* Message */
+
+.message {
+    transition: all 800ms ease-in-out;
+    opacity: 0;
+    display: none;
+    height: 0px;
+}
+
+.message.active {
+    transition: all 800ms ease-in-out;
+    opacity: 1;
+    display: block;
+    height: auto;
+}
+
+.message .card-imagen {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.message .card-content-select {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.message .card-content-select p {
+    background: var(--star);
+    border-radius: 30px;
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    color: var(--buttom);
+}
+
+.message .card-title {
+    text-align: center;
+    margin-top: 20px !important;
+    font-size: 1.70rem;
+    font-weight: 500;
+    color: var(--white) !important;
+}
+
+.message .card-content {
+    margin-top: 20px;
+    color: var(--text) !important;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
